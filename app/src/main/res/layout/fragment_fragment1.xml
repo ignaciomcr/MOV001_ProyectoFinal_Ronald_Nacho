@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".fragments.fragment1">
+
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+    >
+
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/im1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/in"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Publicar propiedad"
+            android:textColor="@color/design_default_color_primary"
+
+            android:textSize="20dp" />
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+     />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/im2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fi" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Búsquedas"
+            android:textColor="@color/design_default_color_primary"
+
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

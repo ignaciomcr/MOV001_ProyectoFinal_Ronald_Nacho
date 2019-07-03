@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mapa"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.mov001_proyectofinal_ronald_nacho.fragments.fragment1"
+        android:label="Fragment 1"
+        tools:layout="@layout/fragment_fragment1">
+
+        <action android:id="@+id/AccionTofragment2"
+            app:destination="@id/fragment2"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.mov001_proyectofinal_ronald_nacho.fragments.fragment2"
+        android:label="Fragment 2"
+        tools:layout="@layout/fragment_fragment2">
+
+        <action android:id="@+id/AccionTofragment3"
+            app:destination="@id/fragment3"/>
+
+        <action android:id="@+id/Accion2ToBuscar"
+            app:destination="@id/fragmentbuscar"/>
+
+
+
+        <argument android:name="argLatLon"
+            android:defaultValue="SinValor"
+            app:argType="string"
+            />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment3"
+
+        android:name="com.example.mov001_proyectofinal_ronald_nacho.fragments.fragment3"
+        android:label="Fragment 3"
+        tools:layout="@layout/fragment_fragment3">
+
+        <action android:id="@+id/AccionTofragment4"
+            app:destination="@id/fragment4"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment4"
+
+        android:name="com.example.mov001_proyectofinal_ronald_nacho.fragments.fragment4"
+        android:label="Fragment 4"
+        tools:layout="@layout/fragment_fragment4">
+
+        <argument android:name="argDocumentoID"
+            android:defaultValue="SinValor"
+            app:argType="string"
+            />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragmentbuscar"
+        android:name="com.example.mov001_proyectofinal_ronald_nacho.fragments.fragmentbuscarmapa"
+        android:label="Fragment buscar"
+        tools:layout="@layout/fragment_fragmentbuscarmapa">
+
+        <action android:id="@+id/AccionTofragment2Registro"
+            app:destination="@id/fragment2"/>
+
+
+
+    </fragment>
+
+</navigation>

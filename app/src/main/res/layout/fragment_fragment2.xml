@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.fragment2">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+     />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="@string/HintTitulo" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría:"
+            android:textSize="15dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/categoria_spinner"
+            android:layout_width="100dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"></Spinner>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provincia:"
+            android:textSize="15dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/provincia_spinner"
+            android:layout_width="100dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"></Spinner>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiene garage?"
+            android:textSize="15dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/garage_spinner"
+            android:layout_width="50dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"></Spinner>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etNumHabitaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:textSize="15dp"
+            android:hint="@string/HintNumHabitac" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:textSize="15dp"
+            android:hint="@string/HintPrecio" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPropietario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="@string/HintPropietario"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación geográfica:"
+                android:textSize="15dp"
+             />
+
+        <Button
+            android:id="@+id/btSeleccionar"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mappng"
+            android:adjustViewBounds="true"
+           />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/holo_blue_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgView"/>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                     />
+
+                    <Button
+                        android:id="@+id/btbuscafoto"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:text="@string/btbuscafoto" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                     />
+
+                    <Button
+                        android:id="@+id/btsubirfoto"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/holo_green_dark"
+                        android:text="@string/btsubirfoto" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+     />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/holo_blue_light" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+     />
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/btRegistrar" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
